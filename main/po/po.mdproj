@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ItemType>TranslationProject</ItemType>
+    <relPath>../../build/bin/locale/</relPath>
+    <translations>
+      <translations>
+        <Translation isoCode="ca" />
+        <Translation isoCode="cs" />
+        <Translation isoCode="da" />
+        <Translation isoCode="de" />
+        <Translation isoCode="es" />
+        <Translation isoCode="fr" />
+        <Translation isoCode="gl" />
+        <Translation isoCode="hu" />
+        <Translation isoCode="id" />
+        <Translation isoCode="it" />
+        <Translation isoCode="ja" />
+        <Translation isoCode="nl" />
+        <Translation isoCode="nb" />
+        <Translation isoCode="pl" />
+        <Translation isoCode="pt" />
+        <Translation isoCode="pt_BR" />
+        <Translation isoCode="ru" />
+        <Translation isoCode="sl" />
+        <Translation isoCode="sv" />
+        <Translation isoCode="tr" />
+        <Translation isoCode="zh_CN" />
+        <Translation isoCode="zh_TW" />
+      </translations>
+    </translations>
+    <packageName>monodevelop</packageName>
+    <outputType>RelativeToOutput</outputType>
+    <ProjectGuid>{AC7D119C-980B-4712-8811-5368C14412D7}</ProjectGuid>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' " />
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' " />
+  <!--
+  Everything above is for the MD translation project serializer, and isn't really valid MSBuild.
+  The real MSBuild project is below. Need to update MD to serialize this instead.
+  -->
+  <PropertyGroup>
+    <OutputPath>..\build\bin\locale</OutputPath>
+    <GettextCatalogName>monodevelop</GettextCatalogName>
+    <GettextCatalogFile>messages.po</GettextCatalogFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <GettextTranslation Include="ca.po" />
+    <GettextTranslation Include="cs.po" />
+    <GettextTranslation Include="da.po" />
+    <GettextTranslation Include="de.po" />
+    <GettextTranslation Include="es.po" />
+    <GettextTranslation Include="fr.po" />
+    <GettextTranslation Include="gl.po" />
+    <GettextTranslation Include="hu.po" />
+    <GettextTranslation Include="id.po" />
+    <GettextTranslation Include="it.po" />
+    <GettextTranslation Include="ja.po" />
+    <GettextTranslation Include="nl.po" />
+    <GettextTranslation Include="nb.po" />
+    <GettextTranslation Include="pl.po" />
+    <GettextTranslation Include="pt.po" />
+    <GettextTranslation Include="pt_BR.po" />
+    <GettextTranslation Include="ru.po" />
+    <GettextTranslation Include="sl.po" />
+    <GettextTranslation Include="sv.po" />
+    <GettextTranslation Include="tr.po" />
+    <GettextTranslation Include="zh_CN.po" />
+    <GettextTranslation Include="zh_TW.po" />
+  </ItemGroup>
+  <Import Project="Gettext.targets" />
+</Project>
